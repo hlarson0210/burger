@@ -7,7 +7,7 @@ if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
     connection = mysql.createConnection({
-        host: 'localhose',
+        host: 'localhost',
         user: 'root',
         password: 'hacktheplanet',
         database: 'todoagain_db'

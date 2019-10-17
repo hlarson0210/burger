@@ -11,5 +11,3 @@ CREATE TABLE burgers (
 );
 
 SELECT * FROM burgers;
-
-UPDATE burgers SET devoured=false WHERE burger_name="Juicy Lucy";
