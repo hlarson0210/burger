@@ -1,6 +1,6 @@
 # Eat-Da-Burger
 ## Application
-This application is organized by using standard MVC format.
+This application is organized by using standard MVC format. Using the concepts of express with the use of ORM created to use methods of CRU to handle requests and displays. This application uses handlebars to organize the html pages and a database backend to store the data for future interactions.
 
 ## Using the application
 1. Navigate to 
