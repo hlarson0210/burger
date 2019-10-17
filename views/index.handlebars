@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card text-center my-4 mx-auto">
+        <div class="card-header bg-success text-white">
+          <h1>Eat-Da-Burger!</h1>
+        </div>
+
+        <div class="card-body">
+          <h4 class="card-title">Add a Burger</h4>
+          <form class="create-form" id="make-burger">
+            <div class="form-group m-0">
+              <label for="ca">Burger Name:</label>
+              <input type="text" id="ca" name="burger_name">
+              <button type="submit" class="btn-sm btn-outline-success">Order up!</button>
+            </div>
+            <span class="m-0"><small class="text-muted">Enter a burger to add to the menu!</small></span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header bg-success">
+          <h3 class="text-white text-center">Burgers menu!</h3>
+        </div>
+        <div id="availableBurgers">
+          <ul class="list-group list-group-flush">
+            {{#each burgers}}
+              {{#unless devoured}}
+                {{> burgers/burger-block devoured=true}}
+              {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header bg-success">
+          <h3 class="text-white text-center">Burgers eaten...yummmmm!</h3>
+        </div>
+        <div id="eatenBurgers">
+          <ul class="list-group list-group-flush">
+            {{#each burgers}}
+              {{#if devoured}}
+                {{> burgers/burger-block devoured=false}}
+              {{/if}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

@@ -1,0 +1,1 @@
+INSERT INTO burgers (burger_name, devoured) VALUES ("Ultimate Burger", FALSE), ("Southern", FALSE), ("Plain Jane", FALSE);
