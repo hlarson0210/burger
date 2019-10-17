@@ -2,6 +2,13 @@
 ## Application
 This application is organized by using standard MVC format.
 
+## Technologies Used:
+* Node.js
+  * express
+  * express-handlebars
+  * path
+  * mysql
+  * dotenv
 
 ## Contributors
 I am the sole contributor to this project. 
