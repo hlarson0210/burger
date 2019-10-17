@@ -1,3 +1,5 @@
 # Eat-Da-Burger
 ## Application
-This application is a handlebar 
+This application is organized by using standard MVC format.
+
+
